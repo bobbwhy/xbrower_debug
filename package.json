@@ -1,0 +1,17 @@
+{
+  "name": "dicey_debug",
+  "version": "0.0.1",
+  "description": "A set of basic cross platform debugging tools.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "debug",
+    "console.log",
+    "log",
+    "assert"
+  ],
+  "author": "Robert LaMarca <robertmlamarca@yahoo.com> (http://www.northbylowereast.com/)",
+  "license": "ISC"
+}

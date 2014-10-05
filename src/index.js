@@ -10,5 +10,5 @@
 
 module.exports = { 
 	log:require("./log"),
-	assert:require("./___assert");
+	assert:require("./___assert")
 }

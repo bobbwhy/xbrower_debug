@@ -1,14 +1,11 @@
 {
-  "name": "dicey_debug",
-  "version": "0.0.1",
+  "name": "xbrowser_debug",
+  "version": "0.0.2",
   "description": "A set of basic cross platform debugging tools.",
-  "main": "./src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository":{
-    "type":"git",
-    "url":"ssh://git/Users/git/repos/dicey_debug.git"
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bobbwhy/xbrower_debug.git"
   },
   "keywords": [
     "debug",
@@ -17,5 +14,11 @@
     "assert"
   ],
   "author": "Robert LaMarca <robertmlamarca@yahoo.com> (http://www.northbylowereast.com/)",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "xmit": "0.0.1"
+  }
 }

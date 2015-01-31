@@ -1,8 +1,10 @@
 
-
-// a cross platform safe logging function 
-// call as log .. 
-// will return the first argument 
+/** 
+ * 	@function
+ * 		A cross platform logging function to wrap console.log
+ * 		
+ * 	@returns the first argument
+ */
 
 module.exports = 
 	function() {
@@ -22,8 +24,11 @@ module.exports =
 			} catch(e) {}
 			return
 		}
+
+
 		if ("console" in wn) {
 			if (typeof(wn.opera)!=="undefined") { 
+
 				var i = 0;
 				for ( ; i !== _l; i++ ) {
 					console.log(args[i]);	
@@ -36,7 +41,8 @@ module.exports =
 				console.log.apply( this, args);
 				return args[0];
 			} catch(e) { 
-				console.log(Array.prototype.slice.call(arguments).toString());
+				console.log(args.join(", "))
+				// console.log(Array.prototype.slice.call(arguments).toString());
 				return args[0];
 			} finally {
 			

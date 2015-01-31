@@ -29,5 +29,5 @@ LoggerXmit.prototype.on = function(lambda) {
 	this._xm.on("LOG", lambda)
 }
 
-module.exports = Logger;
+module.exports = LoggerXmit;
 

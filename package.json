@@ -1,6 +1,6 @@
 {
   "name": "xbrowser_debug",
-  "version": "0.0.36",
+  "version": "0.0.37",
   "description": "A set of basic cross platform debugging tools.",
   "main": "./index.js",
   "repository": {

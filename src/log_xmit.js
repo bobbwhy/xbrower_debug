@@ -22,7 +22,7 @@ function LoggerXmit(name, XmitType, ChannelType) {
 }
 
 LoggerXmit.prototype.log = function() { 
-	this._xm.xmit.apply(this, ["LOG"].concat.[].splice.call(arguments, 0);
+	this._xm.xmit.apply(this, ["LOG"].concat([].splice.call(arguments, 0)));
 }
 
 LoggerXmit.prototype.on = function(lambda) { 

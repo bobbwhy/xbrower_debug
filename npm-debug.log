@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.1.18
+3 info using node@v0.10.35
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/Users/robertlamarca/code/js/xbrowser_debug',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /Users/robertlamarca/.npm/xbrowser_debug/0.0.35/package.tgz not in flight; packing
+10 verbose tar pack [ '/Users/robertlamarca/.npm/xbrowser_debug/0.0.35/package.tgz',
+10 verbose tar pack   '/Users/robertlamarca/code/js/xbrowser_debug' ]
+11 verbose tarball /Users/robertlamarca/.npm/xbrowser_debug/0.0.35/package.tgz
+12 verbose folder /Users/robertlamarca/code/js/xbrowser_debug
+13 info prepublish xbrowser_debug@0.0.35
+14 verbose addLocalTarball adding from inside cache /Users/robertlamarca/.npm/xbrowser_debug/0.0.35/package.tgz
+15 silly cache afterAdd xbrowser_debug@0.0.35
+16 verbose afterAdd /Users/robertlamarca/.npm/xbrowser_debug/0.0.35/package/package.json not in flight; writing
+17 verbose afterAdd /Users/robertlamarca/.npm/xbrowser_debug/0.0.35/package/package.json written
+18 silly publish { name: 'xbrowser_debug',
+18 silly publish   version: '0.0.35',
+18 silly publish   description: 'A set of basic cross platform debugging tools.',
+18 silly publish   main: './index.js',
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'https://github.com/bobbwhy/xbrower_debug.git' },
+18 silly publish   keywords: [ 'debug', 'console.log', 'log', 'assert' ],
+18 silly publish   author:
+18 silly publish    { name: 'Robert LaMarca',
+18 silly publish      email: 'robertmlamarca@yahoo.com',
+18 silly publish      url: 'http://www.northbylowereast.com/' },
+18 silly publish   license: 'ISC',
+18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+18 silly publish   dependencies: { xmit: '0.0.1' },
+18 silly publish   readme: '\n\n* X Browser Debug: \nThis module contains primarily a logging function that works across platforms, (browser, and node), an assert function and a logging function based in the Xmit class that would allow for logging to remote elements of code or other listeners.\n\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '5aadbbe271a7dba6bb6047aca69ce06464d63bd6',
+18 silly publish   bugs: { url: 'https://github.com/bobbwhy/xbrower_debug/issues' },
+18 silly publish   homepage: 'https://github.com/bobbwhy/xbrower_debug',
+18 silly publish   _id: 'xbrowser_debug@0.0.35',
+18 silly publish   _shasum: 'bd32bcd81a9b3185eda52a226e688c932454ac17',
+18 silly publish   _from: '.' }
+19 silly mapToRegistry name xbrowser_debug
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/xbrowser_debug
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/robertlamarca/.npm/xbrowser_debug/0.0.35/package.tgz
+25 verbose request uri https://registry.npmjs.org/xbrowser_debug
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 17:14:01
+28 verbose request id 55956200b498c33e
+29 http request PUT https://registry.npmjs.org/xbrowser_debug
+30 http 403 https://registry.npmjs.org/xbrowser_debug
+31 verbose headers { date: 'Sat, 31 Jan 2015 22:14:02 GMT',
+31 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'cache-control': 'max-age=60',
+31 verbose headers   'content-length': '2844',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   'x-served-by': 'cache-iad2140-IAD',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1422742441.865989,VS0,VE326',
+31 verbose headers   'keep-alive': 'timeout=10, max=50',
+31 verbose headers   connection: 'Keep-Alive' }
+32 verbose request invalidating /Users/robertlamarca/.npm/registry.npmjs.org/xbrowser_debug on PUT
+33 error publish Failed PUT 403
+34 verbose stack Error: forbidden cannot modify pre-existing version: 0.0.35
+34 verbose stack old={"name":"xbrowser_debug","version":"0.0.35","description":"A set of basic cross platform debugging tools.","main":"./index.js","repository":{"type":"git","url":"https://github.com/bobbwhy/xbrower_debug.git"},"keywords":["debug","console.log","log","assert"],"author":{"name":"Robert LaMarca","email":"robertmlamarca@yahoo.com","url":"http://www.northbylowereast.com/"},"license":"ISC","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"dependencies":{"xmit":"0.0.1"},"gitHead":"5aadbbe271a7dba6bb6047aca69ce06464d63bd6","bugs":{"url":"https://github.com/bobbwhy/xbrower_debug/issues"},"homepage":"https://github.com/bobbwhy/xbrower_debug","_id":"xbrowser_debug@0.0.35","_shasum":"bd32bcd81a9b3185eda52a226e688c932454ac17","_from":".","_npmVersion":"2.1.18","_nodeVersion":"0.10.35","_npmUser":{"name":"bobbwhy","email":"robertlamarca@gmail.com"},"maintainers":[{"name":"bobbwhy","email":"robertlamarca@gmail.com"}],"dist":{"shasum":"bd32bcd81a9b3185eda52a226e688c932454ac17","tarball":"http://registry.npmjs.org/xbrowser_debug/-/xbrowser_debug-0.0.35.tgz"}}
+34 verbose stack new={"name":"xbrowser_debug","version":"0.0.35","description":"A set of basic cross platform debugging tools.","main":"./index.js","repository":{"type":"git","url":"https://github.com/bobbwhy/xbrower_debug.git"},"keywords":["debug","console.log","log","assert"],"author":{"name":"Robert LaMarca","email":"robertmlamarca@yahoo.com","url":"http://www.northbylowereast.com/"},"license":"ISC","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"dependencies":{"xmit":"0.0.1"},"readme":"\u000a\u000a* X Browser Debug: \u000aThis module contains primarily a logging function that works across platforms, (browser, and node), an assert function and a logging function based in the Xmit class that would allow for logging to remote elements of code or other listeners.\u000a\u000a","readmeFilename":"README.md","gitHead":"5aadbbe271a7dba6bb6047aca69ce06464d63bd6","bugs":{"url":"https://github.com/bobbwhy/xbrower_debug/issues"},"homepage":"https://github.com/bobbwhy/xbrower_debug","_id":"xbrowser_debug@0.0.35","_shasum":"bd32bcd81a9b3185eda52a226e688c932454ac17","_from":".","_npmVersion":"2.1.18","_nodeVersion":"0.10.35","_npmUser":{"name":"bobbwhy","email":"robertlamarca@gmail.com"},"maintainers":[{"name":"bobbwhy","email":"robertlamarca@gmail.com"}],"dist":{"shasum":"bd32bcd81a9b3185eda52a226e688c932454ac17","tarball":"http://registry.npmjs.org/xbrowser_debug/-/xbrowser_debug-0.0.35.tgz"}}: xbrowser_debug
+34 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:244:14)
+34 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+34 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:373:22)
+34 verbose stack     at Request.emit (events.js:98:17)
+34 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1318:14)
+34 verbose stack     at Request.emit (events.js:117:20)
+34 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1266:12)
+34 verbose stack     at IncomingMessage.emit (events.js:117:20)
+34 verbose stack     at _stream_readable.js:944:16
+34 verbose stack     at process._tickCallback (node.js:442:13)
+35 verbose statusCode 403
+36 verbose pkgid xbrowser_debug
+37 verbose cwd /Users/robertlamarca/code/js/xbrowser_debug
+38 error Darwin 14.0.0
+39 error argv "node" "/usr/local/bin/npm" "publish"
+40 error node v0.10.35
+41 error npm  v2.1.18
+42 error code E403
+43 error forbidden cannot modify pre-existing version: 0.0.35
+43 error old={"name":"xbrowser_debug","version":"0.0.35","description":"A set of basic cross platform debugging tools.","main":"./index.js","repository":{"type":"git","url":"https://github.com/bobbwhy/xbrower_debug.git"},"keywords":["debug","console.log","log","assert"],"author":{"name":"Robert LaMarca","email":"robertmlamarca@yahoo.com","url":"http://www.northbylowereast.com/"},"license":"ISC","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"dependencies":{"xmit":"0.0.1"},"gitHead":"5aadbbe271a7dba6bb6047aca69ce06464d63bd6","bugs":{"url":"https://github.com/bobbwhy/xbrower_debug/issues"},"homepage":"https://github.com/bobbwhy/xbrower_debug","_id":"xbrowser_debug@0.0.35","_shasum":"bd32bcd81a9b3185eda52a226e688c932454ac17","_from":".","_npmVersion":"2.1.18","_nodeVersion":"0.10.35","_npmUser":{"name":"bobbwhy","email":"robertlamarca@gmail.com"},"maintainers":[{"name":"bobbwhy","email":"robertlamarca@gmail.com"}],"dist":{"shasum":"bd32bcd81a9b3185eda52a226e688c932454ac17","tarball":"http://registry.npmjs.org/xbrowser_debug/-/xbrowser_debug-0.0.35.tgz"}}
+43 error new={"name":"xbrowser_debug","version":"0.0.35","description":"A set of basic cross platform debugging tools.","main":"./index.js","repository":{"type":"git","url":"https://github.com/bobbwhy/xbrower_debug.git"},"keywords":["debug","console.log","log","assert"],"author":{"name":"Robert LaMarca","email":"robertmlamarca@yahoo.com","url":"http://www.northbylowereast.com/"},"license":"ISC","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"dependencies":{"xmit":"0.0.1"},"readme":"\u000a\u000a* X Browser Debug: \u000aThis module contains primarily a logging function that works across platforms, (browser, and node), an assert function and a logging function based in the Xmit class that would allow for logging to remote elements of code or other listeners.\u000a\u000a","readmeFilename":"README.md","gitHead":"5aadbbe271a7dba6bb6047aca69ce06464d63bd6","bugs":{"url":"https://github.com/bobbwhy/xbrower_debug/issues"},"homepage":"https://github.com/bobbwhy/xbrower_debug","_id":"xbrowser_debug@0.0.35","_shasum":"bd32bcd81a9b3185eda52a226e688c932454ac17","_from":".","_npmVersion":"2.1.18","_nodeVersion":"0.10.35","_npmUser":{"name":"bobbwhy","email":"robertlamarca@gmail.com"},"maintainers":[{"name":"bobbwhy","email":"robertlamarca@gmail.com"}],"dist":{"shasum":"bd32bcd81a9b3185eda52a226e688c932454ac17","tarball":"http://registry.npmjs.org/xbrowser_debug/-/xbrowser_debug-0.0.35.tgz"}}: xbrowser_debug
+44 error If you need help, you may report this error at:
+44 error     <http://github.com/npm/npm/issues>
+45 verbose exit [ 1, true ]

@@ -1,6 +1,6 @@
 {
   "name": "xbrowser_debug",
-  "version": "0.0.37",
+  "version": "0.0.4",
   "description": "A set of basic cross platform debugging tools.",
   "main": "./index.js",
   "repository": {
@@ -19,6 +19,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "xmit": "0.0.1"
+    "xmit": "0.0.4"
   }
 }
